@@ -17,6 +17,7 @@ import {
   BOT_TEST_ANSWER,
   INPUT,
   PROMPT_CHAT,
+  ANSWER_CHANCE,
 } from "./config.js";
 import { StringOutputParser } from "@langchain/core/output_parsers";
 import { ChatPromptTemplate } from "@langchain/core/prompts";
@@ -153,7 +154,7 @@ bot.on("message", async (msg) => {
   } else if (isUrl(msg.text) && PROVIDER === "OLLAMA") {
     handleUrl(msg, chatId);
   } else {
-    executeFunctionWithProbability(10, msg, chatId, chatInstance);
+    executeFunctionWithProbability(ANSWER_CHANCE, msg, chatId, chatInstance);
   }
 });
 

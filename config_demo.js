@@ -10,6 +10,7 @@ export const BOT_URL = "@";
 export const BOT_NAME = "John";
 export const BOT_TEST_MESSAGE = "Hello";
 export const BOT_TEST_ANSWER = "Hi i'm online";
+export const ANSWER_CHANCE = 10;
 export const INPUT = `{input} - answer to this question, from you character`;
 export const PROMPT_URL = `Summarize the main themes in these retrieved docs: {context}`;
 export const PROMPT_CHAT = ``; // Your character long profile
