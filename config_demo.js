@@ -1,0 +1,15 @@
+export const PORT = XXXX;
+export const TELEGRAM_TOKEN = "XXX";
+export const MISTRAL_API_KEY = "XXX";
+export const PROVIDER = "OLLAMA"; // MISTAL / OLLAMA
+export const OLLAMA_MODEL = "vicuna:13b"; // vicuna:13b / llama2 or other
+export const MISTAL_MODEL = "mistral-medium-latest";
+export const OLLAMA_HOST = "http://localhost:11434";
+export const OLLAMA_URL_QUESTION = "What you think about that?";
+export const BOT_URL = "@";
+export const BOT_NAME = "John";
+export const BOT_TEST_MESSAGE = "Hello";
+export const BOT_TEST_ANSWER = "Hi i'm online";
+export const INPUT = `{input} - answer to this question, from you character`;
+export const PROMPT_URL = `Summarize the main themes in these retrieved docs: {context}`;
+export const PROMPT_CHAT = ``; // Your character long profile
