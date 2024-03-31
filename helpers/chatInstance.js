@@ -3,8 +3,8 @@ import { ChatMistralAI } from "@langchain/mistralai";
 import { ChatYandexGPT } from "@langchain/yandex/chat_models";
 import config from "../config/index.js";
 import generateChatText from "../services/Text2ChatAPI.js";
-import generateUrlText from "../services/Url2TextAPI.js";
-import isUrl from "../utils/checkUrl.js";
+// import generateUrlText from "../services/Url2TextAPI.js";
+// import isUrl from "../utils/checkUrl.js";
 
 async function setChatInstance() {
   let chatInstance;
@@ -34,8 +34,8 @@ async function setChatInstance() {
       );
   }
 
-  async function generateText(msg) {
-    return await generateChatText(msg, chatInstance);
+  async function generateText(msg, type) {
+    return await generateChatText(msg, chatInstance, type);
   }
 
   // async function generateText(msg) {

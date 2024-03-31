@@ -14,11 +14,14 @@ async function generateResponse(msg, type) {
   if (type === "image") {
     const imagePromt = response.text.replace(config.BOT_IMG_START, "").trim();
 
-    console.log(`${config.IMAGE_PROMT} ${imagePromt}`);
+    //  console.log(`${config.IMAGE_PROMT} ${imagePromt}`);
 
-    response = await generateText({
-      text: `${config.IMAGE_PROMT} ${imagePromt}`,
-    });
+    response = await generateText(
+      {
+        text: imagePromt,
+      },
+      type
+    );
 
     console.log(response);
   }

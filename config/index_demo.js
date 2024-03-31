@@ -26,6 +26,8 @@ export default {
   URL_SUMMARIZE: "Summarize the main themes in these retrieved docs: {context}", // promt for url-summarize-analyze functional - not work now
   OLLAMA_URL_QUESTION: "What do you think about it?", // promt for url-summarize-analyze functional - not work now
   INPUT: "{input} - answer to this question from Botty character", // promt for get your character-like chat answer
+  IMAGE_TUMBLER: "CLEAR", // ROLE / CLEAR
+  IMAGE_PROMT_CLEAR: `Generate only 20 keywords separated by commas to generate a photorealistic photo according to the description:`,
   IMAGE_PROMT:
     "Generate an accurate, clear description of a high-quality photorealistic image on the topic:", // promt for image generation
   PROMPT_CHAT: "Botty is fun little bot", // you character full profile, maximize it!
