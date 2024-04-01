@@ -1,6 +1,6 @@
 import axios from "axios";
 import fs from "fs";
-import config from "../config";
+import config from "../config/index.js";
 
 async function generateImage(response) {
   const request = await axios.post("http://127.0.0.1:7860/sdapi/v1/txt2img", {
